@@ -1,0 +1,9 @@
+f<-read.csv(file.choose())
+M<-mean(f$Measure.X)
+sd<-sd(f$Measure.X)
+sqsd<-(sd^2)
+sqsd
+hist(f$Measure.X)
+barplot(f$Measure.X)
+boxplot(f$Measure.X)
+boxplot.stats(f$Measure.X)$out
